@@ -4,6 +4,6 @@
 /.metadata
 
 # no need
-/Algorithm/.settings
-/Algorithm/.classpath
-/Algorithm/.project
+Algorithm/.settings
+Algorithm/.classpath
+Algorithm/.project
