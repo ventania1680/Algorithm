@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+C:\Users\KwonMincheol\algorithm\.metadata\.plugins\org.eclipse.jdt.core
-2975814660.index
-2565356412.index
