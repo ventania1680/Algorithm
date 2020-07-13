@@ -1,4 +1,9 @@
 # : comments
 
-# ignore all files in the /.metadata
+# ignore all files in /.metadata directory
 /.metadata
+
+# no need
+/Algorithm/.settings
+/Algorithm/.classpath
+/Algorithm/.project
