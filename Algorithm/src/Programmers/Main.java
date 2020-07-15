@@ -1,11 +1,10 @@
 // For debug
 package Programmers;
 
-import java.util.Arrays;
-
 public class Main {
 	public static void main(String[] args) {
-		int[] prices = {1,2,3,2,3};
-		System.out.print(Arrays.toString(SQ05.solution(prices)));
+		int[] scoville = {1,2,3,9,10,12};
+		int K = 7;
+		System.out.print(Heap01.solution(scoville, K));
 	}
 }
