@@ -2,3 +2,6 @@
 
 # ignore all files in /.metadata directory
 /.metadata
+
+# ignore all files in /out directory
+/out
