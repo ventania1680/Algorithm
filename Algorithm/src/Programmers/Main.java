@@ -5,9 +5,8 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		int n = 3;
-		int[] lost = {3};
-		int[] reserve = {1};
-		System.out.print(Greedy01.solution(n, lost, reserve));
+		int k = 4;
+		String number = "4177252841";
+		System.out.print(Greedy02.solution(number, k));
 	}
 }
