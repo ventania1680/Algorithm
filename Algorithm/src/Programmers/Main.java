@@ -5,7 +5,9 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		int brown = 24, yellow = 24;
-		System.out.print(Arrays.toString(BF03.solution(brown, yellow)));
+		int n = 3;
+		int[] lost = {3};
+		int[] reserve = {1};
+		System.out.print(Greedy01.solution(n, lost, reserve));
 	}
 }
