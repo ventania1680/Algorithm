@@ -23,7 +23,7 @@ public class BOJ1654 {
 
         long high = sum / n;
         long low = 1;
-        long half = (high - low) / 2 + low;
+        long half = (high + low) / 2;
         int cnt;
         long answer = 0;
         while(high >= low) {
