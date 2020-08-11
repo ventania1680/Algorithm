@@ -1,4 +1,4 @@
-// acmicpc.net/problem/6064
+// https://www.acmicpc.net/problem/6064
 // 20.8.11. ventania1680
 package BOJ;
 
