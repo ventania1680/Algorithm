@@ -50,7 +50,6 @@ public class BOJ9019 {
                 parent = q.peek();
                 cur = f(parent, 'D');
                 if (!visited[cur]) {
-                    q.offer(cur);
                     visited[cur] = true;
                     path[cur] = path[parent] + "D";
                     q.add(cur);
