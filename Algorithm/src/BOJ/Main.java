@@ -3,6 +3,6 @@ package BOJ;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
-		BOJ10026.solution();
+		BOJ11403.solution();
 	}
 }
