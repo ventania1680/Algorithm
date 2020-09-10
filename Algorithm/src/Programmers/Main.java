@@ -5,8 +5,7 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		int k = 4;
-		String number = "4177252841";
-		System.out.print(Greedy02.solution(number, k));
+		int[] money = {1, 2, 3, 1};
+		System.out.print(P42897.solution(money));
 	}
 }
