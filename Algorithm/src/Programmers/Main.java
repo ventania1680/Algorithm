@@ -5,7 +5,8 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		int[] money = {1, 2, 3, 1};
-		System.out.print(P42897.solution(money));
+		int[] numbers = {1, 1, 1, 1, 1};
+		int target = 3;
+		System.out.print(DFSBFS01.solution(numbers, target));
 	}
 }
