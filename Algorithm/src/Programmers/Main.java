@@ -5,8 +5,7 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		int[] numbers = {1, 1, 1, 1, 1};
-		int target = 3;
-		System.out.print(DFSBFS01.solution(numbers, target));
+		int[][] board = {{0,0,0,0,0,0},{0,1,1,1,1,0},{0,0,1,0,0,0},{1,0,0,1,0,1},{0,1,0,0,0,1},{0,0,0,0,0,0}};
+		System.out.print(P67259.solution(board));
 	}
 }
