@@ -2,7 +2,7 @@
 // 20.9.14. ventania1680
 package BOJ;
 
-import java.util.*;K
+import java.util.*;
 import java.io.*;
 
 public class BOJ2573 {
