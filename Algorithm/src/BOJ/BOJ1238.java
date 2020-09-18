@@ -35,8 +35,8 @@ public class BOJ1238 {
         ArrayList<node>[] al = new ArrayList[n+1];
         ArrayList<node>[] al_rev = new ArrayList[n+1];
         for (int i = 1; i <= n; i++) {
-            al[i] = new ArrayList<node>();
-            al_rev[i] = new ArrayList<node>();
+            al[i] = new ArrayList<>();
+            al_rev[i] = new ArrayList<>();
         }
 
         for (int i = 0; i < m; i++) {
@@ -64,14 +64,13 @@ public class BOJ1238 {
         }
 
         Arrays.fill(visited, false);
-        pq.clear();
         int max = 0;
         pq.add(new node(x, 0));
         while(!pq.isEmpty()) {
             cur = pq.poll();
             if (visited[cur.route]) continue;
             visited[cur.route] = true;
-            max = max > d[cur.route] + cur.cost ? max : d[cur.route] + cur.cost;
+            max = Math.max(max, d[cur.route] + cur.cost);
             for (int i = 0; i < al[cur.route].size(); i++) {
                 pq.add(new node(al[cur.route].get(i).route, cur.cost + al[cur.route].get(i).cost));
             }
