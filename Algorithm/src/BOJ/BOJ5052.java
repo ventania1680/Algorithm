@@ -1,3 +1,6 @@
+// https://www.acmicpc.net/problem/5052
+// 20.9.21. ventania1680
+
 package BOJ;
 
 import java.io.*;
@@ -35,7 +38,7 @@ class trie {
 
             thisNode = node;
         }
-        return thisNode.isLastChar;
+        return true;
     }
 }
 
@@ -49,21 +52,18 @@ public class BOJ5052 {
             String[] strArr = new String[n];
             for (int i = 0; i < n; i++)
                 strArr[i] = br.readLine();
-            Arrays.sort(strArr);
-            for (int i = 0; i < n-1; i++) {
-                for (int j = i+1; j < n; j++) {
-                    for (int k = 0; k < strArr[i].length(); k++) {
-                        if (strArr[i].charAt(k) != strArr[j].charAt(k)) {
-                            break;
-                        } else if (k == strArr[i].length()-1) {
-                            sb.append("NO\n");
-                            i = n; j = n;
-                            break;
-                        }
-                    }
+            Arrays.sort(strArr, Comparator.reverseOrder());
+            trie root = new trie();
+            for (int i = 0; i < n; i++) {
+                if (root.contains(strArr[i])) {
+                    sb.append("NO\n");
+                    break;
                 }
-                if (i == n)
+                if (i == n-1) {
                     sb.append("YES\n");
+                    break;
+                }
+                root.insert(strArr[i]);
             }
         }
         System.out.println(sb.toString());
