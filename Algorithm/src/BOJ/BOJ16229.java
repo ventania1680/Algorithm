@@ -29,15 +29,15 @@ public class BOJ16229 {
 
         int answer = 0;
         if (n <= k) {
-            answer = (n + k) / 2;
+            answer = n;
         } else {
             int[] pi = getPi(str);
-            //System.out.println(Arrays.toString(pi));
+            System.out.println(Arrays.toString(pi));
             if (pi[n-1] != 0) {
-                if (n-pi[n-1] <= pi[n-1]+k) {
+                if (n - pi[n-1] <= pi[n-1]+k) {
                     answer = n - pi[n - 1];
                     int len = answer;
-                    while(pi[n-1]+k >= answer*2+len) {
+                    while (n+k >= (answer+len)*2) {
                         answer += len;
                     }
                 }
