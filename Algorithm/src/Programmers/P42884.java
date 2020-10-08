@@ -10,10 +10,10 @@ public class P42884 {
         int answer = 0, left = routes.length;
         Arrays.sort(routes, Comparator.comparingInt(a -> a[1]));
         int last = Integer.MIN_VALUE;
-        for (int i = 0; i < routes.length; i++) {
-            if (last < routes[i][0]) {
+        for (int[] route : routes) {
+            if (last < route[0]) {
                 answer++;
-                last = routes[i][1];
+                last = route[1];
             }
         }
         return answer;
