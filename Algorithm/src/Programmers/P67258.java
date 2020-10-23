@@ -2,17 +2,11 @@
 // 20.10.23. venatnia1680
 package Programmers;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class P67258 {
     public static int[] solution(String[] gems) {
-        Set<String> gemSet = new HashSet<>();
-        for (String gem : gems) {
-            gemSet.add(gem);
-        }
+        Set<String> gemSet = new HashSet<>(Arrays.asList(gems));
         Map<String, Integer> hm = new HashMap<>();
 
         int lim = 0;
@@ -21,9 +15,9 @@ public class P67258 {
         for (int low = 0; low < gems.length; low++) {
             boolean containAll = false;
             int high = lim;
-            for (; high < gems.length && high > low; high++) {
+            for (; high < gems.length && high >= low; high++) {
                 hm.computeIfPresent(gems[high], (k, v) -> ++v);
-                hm.computeIfAbsent(gems[high], v -> 1);
+                hm.putIfAbsent(gems[high], 1);
                 if (hm.size() == gemSet.size()) {
                     if (high - low < len) {
                         len = high - low;
