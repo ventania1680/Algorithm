@@ -5,8 +5,7 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		int n = 6;
-		int[] times = {7, 10};
-		System.out.print(P43238.solution(n, times));
+		String[][] tickets = {{"ICN", "SFO"}, {"ICN", "ATL"}, {"SFO", "ATL"}, {"ATL", "ICN"}, {"ATL", "SFO"}};
+		System.out.print(Arrays.toString(P43164.solution(tickets)));
 	}
 }
