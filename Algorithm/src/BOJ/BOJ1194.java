@@ -38,8 +38,7 @@ public class BOJ1194 {
         while(!queue.isEmpty()) {
             int[] cur = queue.poll();
             if (maze[cur[0]][cur[1]] == '1') {
-                if (answer == -1)
-                    answer = visited[cur[3]][cur[0]][cur[1]];
+                answer = visited[cur[3]][cur[0]][cur[1]];
                 break;
             }
             for (int i = 0; i < 4; i++) {
